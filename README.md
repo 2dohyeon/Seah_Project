@@ -27,13 +27,13 @@ STS Round Bar Material Properties Prediction Service
 
 ![Untitled](%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%87%E1%85%A9%E1%86%BC%E1%84%80%E1%85%A1%E1%86%BC%20%E1%84%86%E1%85%AE%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%8B%E1%85%A8%E1%84%8E%E1%85%B3%E1%86%A8%20%E1%84%89%E1%85%A5%E1%84%87%E1%85%B5%E1%84%89%E1%85%B3%20e43ef01b2bc44071bda031a0e773c73a/Untitled%201.png)
 
-   3.2 Pain Point
+   **3.2 Pain Point**
 
 - 데이터 수집 초기, 파편화된 데이터를 직접 수집하고 병합ㆍ전처리하는 과정에서 **데이터 결측치 및 소실 문제**로 회사 자체 기준에 대한 내용이 중요하게 작용하나 이를 파악하는데 어려움이 있었음
 - 철강 분야의 경우 **제품의 크기, 구성성분의 함량에 따라 Target variable의 양상이 다르게** 보여 데이터셋을 적절한 기준을 두고 여러 Subgroup으로 나누어야 함.
 - 철강 데이터의 경우 통계적인 방법에 기반한 EDA보다는 **철강 Domain 지식에 기반하여 Subgrouping 기준**을 세워야 함.
 
-   3.3 Imporvements
+   **3.3 Imporvements**
 
 - 초반 정의된 문제와 수집한 데이터셋의 분포로 보아 Multi-Output Regression 문제로 정의하였으나 Pain Point에 의해 **Subgrouping을 진행한 Target variable 별 Multi-Model**의 형태로 접근함.
 - 주어진 **데이터의 Target variable의 특성을 기준**으로 하여 큰 영향을 미치는 주요 feature를 선별하여 **K-means에 기반한 Subgrouping**을 진행함
